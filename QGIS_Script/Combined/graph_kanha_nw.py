@@ -84,5 +84,5 @@ def plot_ndvi_apr_to_mar(
 
 plot_ndvi_apr_to_mar(
     layer_name="nw_kanha_table",
-    start_year=2001
+    start_year=2005
 )
