@@ -61,7 +61,7 @@ for(file in csv_files){
   ndvi$ndvi_filled <- zoo::na.locf(ndvi$ndvi_filled, fromLast=TRUE)
   
   # ---- Apply Savitzky–Golay filter
-  window_size <- 7   # 7*5 = 35 days (good for Landsat)
+  window_size <- 9   
   poly_order  <- 2
   
   ndvi$ndvi_sg <- signal::sgolayfilt(
